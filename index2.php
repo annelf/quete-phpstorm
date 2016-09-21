@@ -1,15 +1,18 @@
 <?php
 
     $students = array (
-        'Emnnauel' => 42,
+        'Emmanuel' => 42,
         'Thierry' => 51,
         'Pascal' => 45,
         'Eric' => 48,
         'Nicolas' => 19
     );
+        foreach ($students as $key => $element)
+        {
+            echo $key. ' '. $element. '<br />';
+        }
 
-    var_dump($students);
 
     $moyenne = array_sum($students )/ count($students);
-        echo $moyenne;
+        echo "La moyenne d'âge est de : ". $moyenne. ' ans';
 ?>
